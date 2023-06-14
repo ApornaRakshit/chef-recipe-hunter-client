@@ -8,7 +8,7 @@ import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <div className=' mt-2 mb-2 mx-4'>
+        <div className='justify-content-center align-middle  mt-2 mb-2 mx-auto '>
             <Carousel expand="lg">
             <Carousel.Item>
                 <img

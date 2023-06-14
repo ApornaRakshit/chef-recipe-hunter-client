@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import first from '../../../assets/images/recipe1.jpg'
-import second from '../../../assets/images/recipe2.jpg'
-import third from '../../../assets/images/recipe3.jpg'
+import second from '../../../assets/images/pizza.jpg'
+import third from '../../../assets/images/fried.jpg'
 import forth from '../../../assets/images/recipe4.jpg'
 import fifth from '../../../assets/images/recipe5.jpg'
-import sixth from '../../../assets/images/recipe6.jpg'
+import sixth from '../../../assets/images/chickenFried.jpg'
 
 const RecipeSection = () => {
     return (

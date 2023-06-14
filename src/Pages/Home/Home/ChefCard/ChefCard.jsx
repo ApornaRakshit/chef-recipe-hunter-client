@@ -11,8 +11,8 @@ const ChefCard = ({ chef }) => {
 
         <Card style={{ width: '18rem' }}>
             <Card.Header className='d-flex align-items-center'>
-                
-                <Image style={{ height: '40px'  }} src={author?.img} roundedCircle />
+
+                <Image style={{ height: '40px' }} src={author?.img} roundedCircle />
                 <div className='ps-2 flex-grow-1'>
                     <p>{author?.name}</p>
                     <p>Experience: {yearsOfExperience}</p>
