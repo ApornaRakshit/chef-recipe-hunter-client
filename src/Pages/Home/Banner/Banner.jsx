@@ -1,59 +1,48 @@
 import React from 'react';
-import banner1 from '../../../assets/images/banner1.webp'
-import banner2 from '../../../assets/images/banner2.jpg'
-import banner3 from '../../../assets/images/banner3.jpg'
-
+import slider1 from '../../../assets/images/banner5.jpg'
+import slider2 from '../../../assets/images/slider2.jpg'
+import slider3 from '../../../assets/images/slider3.jpg'
 import { Carousel } from 'react-bootstrap';
-
 
 const Banner = () => {
     return (
-        <div className='justify-content-center align-middle  mt-2 mb-2 mx-auto '>
-            <Carousel expand="lg">
+
+        <Carousel>
             <Carousel.Item>
                 <img
-                    className="d-block" 
-                    src={banner1}
-                    alt="First slide"
-                />
-                <Carousel.Caption className='align-middle justify-content-center'>
-                    <h2>COOK HEALTHY EDIBLE FOOD</h2>
-                    <p>Children and families learn knowledge and skills to develop healthy attitudes towards food</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block"
-                    src={banner2}
-                    alt="Second slide"
-                />
-                <Carousel.Caption className='align-middle justify-content-center'>
-                    <h2>EXPERIENTIAL LEARNING THROUGH FOOD</h2>
-                    <p>EXPERIENTIAL LEARNING THROUGH FOOD
-                        Programs for educators, students & families to support life-long healthy eating and the pleasure of cooking with real food</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block" 
-                    src={banner3}
+                    className="d-block w-100 p-5"
+                    src={slider3}
                     alt="Third slide"
                 />
-                <Carousel.Caption className='align-middle justify-content-center'>
-                    <h2>OUR COMMUNITY CARES</h2>
-                    <p>
-                        Helping children learn about food, from garden to table, from seed to kitchen, back to compost.
-                    </p>
+
+                <Carousel.Caption>
+                    <h3 className='p-2'>"A passion for cooking starts with respect ingredients"</h3>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100 p-5"
+                    src={slider1}
+                    alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h3 className='p-2'>"Cooking is not a profession, it's an emotion"</h3>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100 p-5"
+                    src={slider2}
+                    alt="Second slide"
+                />
+
+                <Carousel.Caption>
+                    <h3 className='p-2'>"Chef doesn't do any  mistake, they invent new dishes"</h3>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        </div>
+
     );
 };
 
 export default Banner;
-
-
-
-
-
