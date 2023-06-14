@@ -4,27 +4,23 @@ import { FaRegHeart } from 'react-icons/fa';
 import Rating from 'react-rating';
 import { Link, useLoaderData } from 'react-router-dom';
 import ChefRecipe from '../../Home/Chef Recipe Section/ChefRecipe';
+import bannerPart from '../../../assets/images/slider2.jpg'
 
 const Foods = () => {
     const foods = useLoaderData();
     const { _id, title, details, image_url, author, name, rating, yearsOfExperience, bio, likes, recipeNumber } = foods
     return (
-        <div className='mx-auto w-'>
-
-            {/*<Card className='mt-2 mb-12 p-4'>
-                <Card.Img style={{ height: '70%' }} variant="top" src={image_url} />
-                <Card.Body>
-                    <Card.Title>{title}</Card.Title>
-                    <Card.Text>
-                        {details}
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>*/}
-
-            <Row xs={1} md={2} lg={2} className="g-4">
+        <div className='mx-auto p-5 overflow-x-hidden'>
+           <img
+                    className="d-block w-100 mx-auto pr-5"
+                    src={bannerPart}
+                    alt="First slide"
+                />
+            
+            <h3 className='chef-title mx-auto'> Chef's Recipe</h3>
+            <Row xs={1} md={2} lg={2} className="g-2">
                 <Col>
-                    <Card className='m-4 mx-auto'>
+                    <Card className='mx-auto'>
                         <Card.Img style={{ height: '50%' }} variant="top" src={author?.img} />
                         <Card.Body>
                             <Card.Title>
@@ -49,7 +45,6 @@ const Foods = () => {
                 </Col>
 
             </Row>
-
             <ChefRecipe></ChefRecipe>
 
         </div>

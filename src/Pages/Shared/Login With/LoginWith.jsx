@@ -27,16 +27,16 @@ const LoginWith = () => {
     }
 
 
-    const handleGithubSignIn = ()=>{
+    const handleGithubSignIn = () => {
         signInWithPopup(auth, githubProvider)
-        .then(result=>{
-            const logUser = result.user
-            console.log(logUser)
-            setUser(logUser)
-        })
-        .catch(error=>{
-            console.log(error)
-        })
+            .then(result => {
+                const logUser = result.user
+                console.log(logUser)
+                setUser(logUser)
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
     const handleSignOut = () => {
@@ -67,9 +67,8 @@ const LoginWith = () => {
                         </>
                 }
                 {user && <div className='d-flex g-2'>
-                    <h4>User:{user.displayName}</h4>
-                    <p>Email: {user.email}</p>
-                    <img src={user.photoURL} alt="" />
+                    <h6 className='align-items-end'>{user.displayName}</h6>
+
                 </div>
                 }
             </Container>
@@ -78,6 +77,10 @@ const LoginWith = () => {
 };
 
 export default LoginWith;
+
+
+//<p>Email: {user.email}</p>
+//<img src={user.photoURL} alt="" />
 
 
 

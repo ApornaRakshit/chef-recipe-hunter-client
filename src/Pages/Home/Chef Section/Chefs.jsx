@@ -14,7 +14,7 @@ const Chefs = () => {
 
     return (
         <div >
-            <h4>Chef's Name</h4>
+            <h3 className='chef-title mx-auto'> Chef's Name </h3>
             <div className='mt-2 mb-3 gap-5 d-flex'>
                 {
                     chefs.map(chef => <p

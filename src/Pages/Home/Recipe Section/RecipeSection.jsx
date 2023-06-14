@@ -10,7 +10,7 @@ import sixth from '../../../assets/images/chickenFried.jpg'
 const RecipeSection = () => {
     return (
         <div>
-            <h2>Recipe Part</h2>
+            <h3 className='chef-title pt-5'> Recipe Name </h3>
             <Row xs={1} md={2} lg={3} className="g-4">
                 <Col>
                     <Card>

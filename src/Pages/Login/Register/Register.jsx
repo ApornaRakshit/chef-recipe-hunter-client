@@ -85,3 +85,6 @@ const Register = () => {
 };
 
 export default Register;
+
+
+//<Form.Control type="text" name='photo' placeholder="Photo URL" required />

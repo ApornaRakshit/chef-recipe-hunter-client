@@ -7,6 +7,7 @@ import { Carousel } from 'react-bootstrap';
 const Banner = () => {
     return (
 
+        <>
         <Carousel>
             <Carousel.Item>
                 <img
@@ -41,6 +42,7 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        </>
 
     );
 };
